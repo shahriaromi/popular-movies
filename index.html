@@ -100,8 +100,8 @@
     <!-- tour start -->
     <div class="features tour">
       <div class="container">
-        <h1>popular movies</h1>
-        <div class="owl-carousel owl-theme">
+        <h1>Trending movies</h1>
+        <div id="owl-one" class="owl-carousel owl-theme">
           <div class="item">
             <img src="./images/Calque 2.png" alt="" />
           </div>
@@ -128,7 +128,7 @@
     <div class="features tour popular">
       <div class="container">
         <h1>popular movies</h1>
-        <div class="owl-carousel owl-theme">
+        <div id="owl-two" class="owl-carousel owl-theme">
           <div class="item">
             <img src="./images/Calque 8.png" alt="" />
           </div>
@@ -194,12 +194,32 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
-      $('.owl-carousel').owlCarousel({
+      $('#owl-one').owlCarousel({
         loop: true,
         margin: 20,
         nav: false,
         autoplay: true,
         autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      $('#owl-two').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
         responsive: {
           0: {
             items: 1,
