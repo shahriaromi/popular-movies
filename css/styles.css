@@ -194,6 +194,9 @@ header .navbar-light .navbar-nav .nav-link {
   margin: 10px auto;
   /* text-align: center; */
 }
+.stats button:hover {
+  background: rgb(39, 82, 54);
+}
 .features {
   margin: 0px 0;
 }
