@@ -94,6 +94,9 @@ header .navbar-light .navbar-nav .nav-link {
   text-align: right;
   margin-left: auto;
 }
+.watch:hover {
+  background: rgb(134, 21, 21);
+}
 .banner p {
   line-height: 36px;
 }
